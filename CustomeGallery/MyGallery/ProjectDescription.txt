@@ -1,0 +1,1 @@
+这个Gallery可以动态的添加Item.

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="116px"
+    android:layout_height="140px"
+    android:orientation="vertical"
+    android:scaleType="centerInside"
+    android:id="@+id/gallerychild">
+    <RelativeLayout 
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent" 
+        android:layout_height="116px">
+        <LinearLayout
+            android:id="@+id/container"
+            android:gravity="center"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px" 
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_base" />
+        <ImageView 
+            android:id="@+id/selectedframe"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:layout_margin="0px" 
+            android:visibility="invisible" 
+            android:background="@drawable/focus" />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/label" 
+        android:layout_width="fill_parent"
+        android:layout_height="24px" 
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg_selector" 
+        android:textSize="13px"
+        android:maxLines="1" 
+        android:layout_marginTop="-5px"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" 
+        android:textColor="@color/black"
+        android:gravity="top|center_horizontal"
+        android:visibility="gone" >
+    </TextView>
+</LinearLayout>

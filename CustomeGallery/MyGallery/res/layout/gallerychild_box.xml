@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130px" 
+    android:orientation="vertical"
+    android:layout_height="144px" 
+    android:scaleType="centerInside"
+    android:id="@+id/LinearLayout01">
+    <RelativeLayout 
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/AppBtnImageView"
+            android:layout_width="96px" 
+            android:layout_height="96px"
+            android:scaleType="centerInside" 
+            android:layout_marginLeft="9px"
+            android:layout_marginTop="10px" 
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_base" />
+        <ImageView android:id="@+id/selectedframe"
+            android:layout_width="113px" 
+            android:layout_height="114px"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0px" 
+            android:layout_marginTop="0px"
+            android:visibility="invisible" 
+            android:background="@drawable/focus" />
+        <TextView android:id="@+id/box_num"
+            android:layout_alignBottom="@id/AppBtnImageView"
+            android:layout_alignParentRight="true" 
+            android:layout_marginRight="8px"
+            android:layout_marginBottom="-17px" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/popup"
+            android:textColor="@color/black" 
+            android:lines="1" 
+            android:gravity="center"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/name" 
+        android:layout_width="96px"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg_selector" 
+        android:textSize="13px"
+        android:maxLines="2" 
+        android:layout_marginTop="-14px"
+        android:layout_marginLeft="10px" 
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" 
+        android:textColor="@color/bright_text_dark_focused"
+        android:gravity="top|center_horizontal">
+    </TextView>
+</LinearLayout>

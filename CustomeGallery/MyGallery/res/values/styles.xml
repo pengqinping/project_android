@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyGallery">
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:spacing">-20dip</item>
+        <item name="android:unselectedAlpha">0.85</item>
+    </style>
+</resources>
