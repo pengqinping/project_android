@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnShowNotifaction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击显示Notification" />
+
+    <Button
+        android:id="@+id/btnShowNotifactionWithId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击显示Notification,每次点击，新建一个Id,之前不存在的" />
+
+    <Button
+        android:id="@+id/btnShowNotifactionRemoteView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击显示自定义View来展示Notification" />
+
+    <Button
+        android:id="@+id/btnNotificationNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification新点击多次看info展示的值，看看如何更新" />
+
+    <Button
+        android:id="@+id/btnNotificationNewBig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="NotificationBigView" />
+
+    <Button
+        android:id="@+id/btnNotificationUpdateMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 通过PendingIntent设立一个规则的activity" />
+
+    <Button
+        android:id="@+id/btnNotificationActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 通过PendingIntent设立一个专用的activity" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="常规的Activity，在homeScreen点击Notification跳转到指定的Activity，按back回到指定的页面，专用的Activity，同样的环境下，点击home键和back键会产生一样的效果，也就是都会回到homeScreen页面" />
+
+</LinearLayout>
