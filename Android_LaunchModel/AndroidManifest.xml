@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.pqp.launchmodel"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.pqp.launchmodel.standard.StandardActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.pqp.launchmodel.standard.StandardTargetActivity"
+            android:launchMode="standard" >
+        </activity>
+
+        <!-- 申明activity  singleTop : 特点，多实例，在栈顶不会被new一个实例。 -->
+        <activity
+            android:name="org.pqp.launchmodel.singletop.SingleTopActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 单实例 -->
+        <activity
+            android:name="org.pqp.launchmodel.singletask.SingleTaskActivity"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <!-- 单实例 -->
+        <activity
+            android:name="org.pqp.launchmodel.singleinstant.SingleInstantActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+    </application>
+
+</manifest>

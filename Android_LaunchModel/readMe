@@ -1,0 +1,11 @@
+Notes:androi的启动模式：
+   1.standard（多实例）
+                标准的启动模式，activity是多实例，每次去启动的时候都会创建一个新的activity实例，A-->B
+           A,B走完整的生命周期流程，aOncreate-->onstart-->onResume-->onPush--bOncreate
+           
+   2.singTop,（多实例，activity在栈顶的时候不会new一个实例，其它时候一直会new一个实例）
+   
+   3.singTask，（同一个栈内，activity一直在栈底，有一个新的intent过来时指向这个activity，会把和它在同一个栈中其它的activity干掉）
+   
+   
+   4.singInstalls永远都是一个栈，独自的一个。) 
